@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>为magento开启gzip - PowerRC blog </title>
+        <meta name="description" content="gzip是好东西，这个毋庸置疑，开启的方法很多，前提是先要在apache 加载相应的模块(这个编译的时候选了gzip模块和deflate就ok了)，很多空间默认都开启的。 然后修改.htaccess,加入如下代码 # ## enable apache served files compression# # Insert filterSetOutputFilter DEFLATE## # Netscape 4.x has some problemsBrowserMatch&amp;hellip;">
+        
+        <meta name="generator" content="Publii Open-Source CMS for Static Site">
+
+        <link rel="canonical" href="https://powerrc.github.io/blog/wei-magentokai-qi-gzip.html">
+        <link rel="alternate" type="application/atom+xml" href="https://powerrc.github.io/blog/feed.xml" title="PowerRC blog - RSS">
+<link rel="alternate" type="application/json" href="https://powerrc.github.io/blog/feed.json" title="PowerRC blog - JSON">
+
+        <meta property="og:title" content="为magento开启gzip"><meta property="og:site_name" content="PowerRC blog"><meta property="og:description" content="gzip是好东西，这个毋庸置疑，开启的方法很多，前提是先要在apache 加载相应的模块(这个编译的时候选了gzip模块和deflate就ok了)，很多空间默认都开启的。 然后修改.htaccess,加入如下代码 # ## enable apache served files compression# # Insert filterSetOutputFilter DEFLATE## # Netscape 4.x has some problemsBrowserMatch&amp;hellip;"><meta property="og:url" content="https://powerrc.github.io/blog/wei-magentokai-qi-gzip.html"><meta property="og:type" content="article">
+        
+        <link rel="stylesheet" href="https://powerrc.github.io/blog/assets/css/style.css?v&#x3D;9763c2127e3ff107113b48061787f784">       
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://powerrc.github.io/blog/wei-magentokai-qi-gzip.html"},"headline":"为magento开启gzip","datePublished":"2014-06-03T16:02-07:00","dateModified":"2026-08-18T09:51-07:00","description":"gzip是好东西，这个毋庸置疑，开启的方法很多，前提是先要在apache 加载相应的模块(这个编译的时候选了gzip模块和deflate就ok了)，很多空间默认都开启的。 然后修改.htaccess,加入如下代码 # ## enable apache served files compression# # Insert filterSetOutputFilter DEFLATE## # Netscape 4.x has some problemsBrowserMatch&hellip;","author":{"@type":"Person","name":"PowerRC","url":"https://powerrc.github.io/blog/authors/powerrc/"},"publisher":{"@type":"Organization","name":"PowerRC"}}</script>        
+        <noscript>
+            <style>
+                img[loading] {
+                    opacity: 1;
+                }
+            </style>
+        </noscript> 
+        
+    </head>
+    <body class="post-template lines">
+        
+        <div class="container lines lines--right"><header class="header">
+
+   <a href="https://powerrc.github.io/blog/" class="logo">
+         PowerRC blog
+   </a>
+
+
+
+</header>
+<main class="main post">
+      <article class="content">      
+         <header class="content__inner content__header">
+            <h1 class="content__title">
+               为magento开启gzip
+            </h1>
+               <div class="content__meta">
+                     <div class="content__meta__left">                        
+                           <a href="https://powerrc.github.io/blog/authors/powerrc/" class="invert content__author" rel="author" title="PowerRC">
+                              PowerRC
+                           </a>
+                     </div>
+
+                     <div class="content__meta__right">
+                           <time datetime="2014-06-03T16:02" class="content__date">
+                                 June 3, 2014
+                           </time>
+
+                              <div class="content__updated">
+                                 Updated on
+                                 <time datetime="2014-06-03T16:02" class="content__date">
+                                       August 18, 2026
+                                 </time>
+                              </div>
+                     </div>
+               </div>
+         </header>
+
+
+         <div class="content__inner">
+            <div class="content__entry">
+               <p>gzip是好东西，这个毋庸置疑，开启的方法很多，前提是先要在apache 加载相应的模块(这个编译的时候选了gzip模块和deflate就ok了)，很多空间默认都开启的。</p>
+<p>然后修改.htaccess,加入如下代码</p>
+<pre><code><restore-line-break># ## enable apache served files compression<restore-line-break># # Insert filter<restore-line-break>SetOutputFilter DEFLATE<restore-line-break>#<restore-line-break># # Netscape 4.x has some problems<85><restore-line-break>BrowserMatch ^Mozilla/4 gzip-only-text/html<restore-line-break>#<restore-line-break># # Netscape 4.06-4.08 have some more problems<restore-line-break>BrowserMatch ^Mozilla/4\.0[678] no-gzip<restore-line-break>#<restore-line-break># # MSIE masquerades as Netscape, but it is fine<restore-line-break>BrowserMatch \bMSIE !no-gzip !gzip-only-text/html<restore-line-break># # Don<92>t compress images<restore-line-break>SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary<restore-line-break>#<restore-line-break># # Make sure proxies don<92>t deliver the wrong content<restore-line-break>Header append Vary User-Agent env=!dont-vary<restore-line-break># ## enable resulting html compression<restore-line-break>#<restore-line-break>php_flag zlib.output_compression on<restore-line-break></code></pre>
+<p>
+
+Nginx 下怎么开？
+直接配置文件里加参数
+gzip on;
+这个默认就有的。所以不用操心。</p>
+
+            </div>
+
+					<footer class="content__footer">
+                  <div class="content__tag-share">
+                           <div class="content__tag">
+                              <h3 class="content__tag__title">Posted in</h3>
+                              <ul class="content__tag__list">
+                                    <li>
+                                       <a href="https://powerrc.github.io/blog/tags/linux-bash/">Linux / Bash</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://powerrc.github.io/blog/tags/magento_v1/">Magento V1.x</a>
+                                    </li>
+                              </ul>
+                           </div>
+
+                           <div class="content__share">
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                           </div>
+                  </div>
+               </footer>
+
+         </div>
+      </article>
+
+
+
+
+   
+</main>
+   <footer class="footer">
+         <div class="footer__left">
+            
+               <div class="footer__copy">
+                  Powered by Publii
+               </div>
+         </div>
+      
+
+         <button
+            onclick="backToTopFunction()"
+            id="backToTop"
+            class="footer__bttop"
+            aria-label="Back to top"
+            title="Back to top">
+            <svg>
+               <use xlink:href="https://powerrc.github.io/blog/assets/svg/svg-map.svg#toparrow"/>
+            </svg>
+         </button>
+   </footer>
+</div>
+
+<script> window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', }; </script>
+
+<script defer src="https://powerrc.github.io/blog/assets/js/scripts.min.js?v&#x3D;628f9b14187b480516b6c7f8be1e7585"></script>
+    <script>          
+      function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();
+    </script>
+
+
+
+
+</body>
+</html>

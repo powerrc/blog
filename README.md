@@ -1,2 +1,0 @@
-# blog
-www.powerrc.net
