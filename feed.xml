@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>PowerRC blog</title>
-    <link href="https://powerrc.github.io/blog/feed.xml" rel="self" />
-    <link href="https://powerrc.github.io/blog" />
+    <link href="https://powerrc.net/feed.xml" rel="self" />
+    <link href="https://powerrc.net" />
     <updated>2026-08-18T09:51:48-07:00</updated>
     <author>
         <name>PowerRC</name>
     </author>
-    <id>https://powerrc.github.io/blog</id>
+    <id>https://powerrc.net</id>
 
     <entry>
         <title>How to enable ISA-L for openstack swift</title>
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/how-to-enable-isa-l-for-openstack-swift.html"/>
-        <id>https://powerrc.github.io/blog/how-to-enable-isa-l-for-openstack-swift.html</id>
+        <link href="https://powerrc.net/how-to-enable-isa-l-for-openstack-swift.html"/>
+        <id>https://powerrc.net/how-to-enable-isa-l-for-openstack-swift.html</id>
 
         <updated>2018-04-27T16:34:05-07:00</updated>
             <summary type="html">
@@ -48,8 +48,8 @@ ldconfig
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/recovery-software-raid-in-centos7.html"/>
-        <id>https://powerrc.github.io/blog/recovery-software-raid-in-centos7.html</id>
+        <link href="https://powerrc.net/recovery-software-raid-in-centos7.html"/>
+        <id>https://powerrc.net/recovery-software-raid-in-centos7.html</id>
 
         <updated>2017-04-13T11:55:50-07:00</updated>
             <summary type="html">
@@ -75,8 +75,8 @@ ldconfig
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/jian-dan-fen-xiang-yi-xia-wo-de-home-network-infrastructure.html"/>
-        <id>https://powerrc.github.io/blog/jian-dan-fen-xiang-yi-xia-wo-de-home-network-infrastructure.html</id>
+        <link href="https://powerrc.net/jian-dan-fen-xiang-yi-xia-wo-de-home-network-infrastructure.html"/>
+        <id>https://powerrc.net/jian-dan-fen-xiang-yi-xia-wo-de-home-network-infrastructure.html</id>
 
         <updated>2016-09-27T10:43:28-07:00</updated>
             <summary type="html">
@@ -106,7 +106,7 @@ ldconfig
        1）无风扇工控机做vm hypervisor。最好要无扇的，因为这机子是要长期开的，功耗越低越好，一般只有功耗低的机子才能做到无扇，工控机可胜任此职。硬件要求是内存和CPU要尽可能的好，要双网口。另外要能接sata硬盘。可以用二奶机来做。我在国内淘宝弄了台c1037u双网口的山寨牌子工控机，加了64g msata ssd和4g内存 和500gb硬盘（硬盘是笔记本升级ssd时淘汰下来的）。用了2年，还行，偶尔会开不了机，长期开着的时候很稳定。现在的工控机选择更多，注意最好能买支持虚拟直通(vt-d)的机子，这样跑虚拟机的时候可以直接用很多外设，我的c1037u不支持直通，结果工控机本身自带的无线网卡是没法用了。
        2）一台无线路由器做无线ap或者switch+专业无线AP。这里我用的是路由器。有时候软路由挂了还能把路由器拿来backup。网络设备多的记得一定要用5ghz wifi网络，否则串扰很严重。100mb的internet带宽需要802.11ac的路由器/ap才能跑满。经过我的测试发现，家用无线路由器如果不开启NAT功能，只做简单的AP，异常稳定，可以半年不用重启一次。</p>
 <p>5、Network diagram
-<a href="https://www.powerrc.net/wp-content/uploads/2016/09/net_diagram.jpg"><figure class="aligncenter size-medium wp-image-434"><img loading="lazy" src="https://powerrc.github.io/blog/media/posts/75/net_diagram-300x209.jpg" alt="net_diagram"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.github.io/blog/media/posts/75/responsive/net_diagram-300x209-xs.jpg 384w ,https://powerrc.github.io/blog/media/posts/75/responsive/net_diagram-300x209-sm.jpg 600w ,https://powerrc.github.io/blog/media/posts/75/responsive/net_diagram-300x209-md.jpg 768w ,https://powerrc.github.io/blog/media/posts/75/responsive/net_diagram-300x209-lg.jpg 1200w ,https://powerrc.github.io/blog/media/posts/75/responsive/net_diagram-300x209-xl.jpg 1600w"></figure></a></p>
+<a href="https://www.powerrc.net/wp-content/uploads/2016/09/net_diagram.jpg"><figure class="aligncenter size-medium wp-image-434"><img loading="lazy" src="https://powerrc.net/media/posts/75/net_diagram-300x209.jpg" alt="net_diagram"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-xs.jpg 384w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-sm.jpg 600w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-md.jpg 768w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-lg.jpg 1200w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-xl.jpg 1600w"></figure></a></p>
 
             ]]>
         </content>
@@ -116,8 +116,8 @@ ldconfig
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/wo-dui-kong-zhi-fan-zhuan-yu-yi-lai-zhu-ru-de-li-jie.html"/>
-        <id>https://powerrc.github.io/blog/wo-dui-kong-zhi-fan-zhuan-yu-yi-lai-zhu-ru-de-li-jie.html</id>
+        <link href="https://powerrc.net/wo-dui-kong-zhi-fan-zhuan-yu-yi-lai-zhu-ru-de-li-jie.html"/>
+        <id>https://powerrc.net/wo-dui-kong-zhi-fan-zhuan-yu-yi-lai-zhu-ru-de-li-jie.html</id>
 
         <updated>2016-09-20T10:30:43-07:00</updated>
             <summary type="html">
@@ -154,8 +154,8 @@ ldconfig
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/magento2xiu-gai-ding-dan-bian-hao-gui-ze.html"/>
-        <id>https://powerrc.github.io/blog/magento2xiu-gai-ding-dan-bian-hao-gui-ze.html</id>
+        <link href="https://powerrc.net/magento2xiu-gai-ding-dan-bian-hao-gui-ze.html"/>
+        <id>https://powerrc.net/magento2xiu-gai-ding-dan-bian-hao-gui-ze.html</id>
 
         <updated>2016-09-15T18:35:46-07:00</updated>
             <summary type="html">
@@ -169,7 +169,7 @@ ldconfig
 由于某种原因，2.0开始后他们就不开放这个后台功能。</p>
 <p>今天刮了一下代码，发现这个编号功能，是由一个名字叫"SalesSequence"的模组控制。
 这个模组在数据库里的表名是"sales_sequence_profile"
-<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.github.io/blog/media/posts/73/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.github.io/blog/media/posts/73/responsive/magento2_increment_profile_table-300x140-xs.jpg 384w ,https://powerrc.github.io/blog/media/posts/73/responsive/magento2_increment_profile_table-300x140-sm.jpg 600w ,https://powerrc.github.io/blog/media/posts/73/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.github.io/blog/media/posts/73/responsive/magento2_increment_profile_table-300x140-lg.jpg 1200w ,https://powerrc.github.io/blog/media/posts/73/responsive/magento2_increment_profile_table-300x140-xl.jpg 1600w"></figure></a>
+<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.net/media/posts/73/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-xs.jpg 384w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-sm.jpg 600w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-lg.jpg 1200w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-xl.jpg 1600w"></figure></a>
 用phpmyadmin打开他，你就能知道你想要修改的东西了。</p>
 
 
@@ -181,8 +181,8 @@ ldconfig
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/how-to-change-order-number-prefix-in-magento2.html"/>
-        <id>https://powerrc.github.io/blog/how-to-change-order-number-prefix-in-magento2.html</id>
+        <link href="https://powerrc.net/how-to-change-order-number-prefix-in-magento2.html"/>
+        <id>https://powerrc.net/how-to-change-order-number-prefix-in-magento2.html</id>
 
         <updated>2016-09-15T18:29:52-07:00</updated>
             <summary type="html">
@@ -196,7 +196,7 @@ ldconfig
 But for some reason , magento team didn't open it for community version in v2.x</p>
 <p>After digging into the codes , I found out it's actually controlled by a module named "SalesSequence".
 All setting are stored in a database table named "sales_sequence_profile"
-<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.github.io/blog/media/posts/72/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.github.io/blog/media/posts/72/responsive/magento2_increment_profile_table-300x140-xs.jpg 384w ,https://powerrc.github.io/blog/media/posts/72/responsive/magento2_increment_profile_table-300x140-sm.jpg 600w ,https://powerrc.github.io/blog/media/posts/72/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.github.io/blog/media/posts/72/responsive/magento2_increment_profile_table-300x140-lg.jpg 1200w ,https://powerrc.github.io/blog/media/posts/72/responsive/magento2_increment_profile_table-300x140-xl.jpg 1600w"></figure></a></p>
+<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.net/media/posts/72/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-xs.jpg 384w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-sm.jpg 600w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-lg.jpg 1200w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-xl.jpg 1600w"></figure></a></p>
 <p>Table field "prefix" is what you want to change.</p>
 
 
@@ -208,8 +208,8 @@ All setting are stored in a database table named "sales_sequence_profile"
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/netbeans-canand039t-connect-to-githubgitlab-through-https-url.html"/>
-        <id>https://powerrc.github.io/blog/netbeans-canand039t-connect-to-githubgitlab-through-https-url.html</id>
+        <link href="https://powerrc.net/netbeans-canand039t-connect-to-githubgitlab-through-https-url.html"/>
+        <id>https://powerrc.net/netbeans-canand039t-connect-to-githubgitlab-through-https-url.html</id>
 
         <updated>2016-09-13T00:25:59-07:00</updated>
             <summary type="html">
@@ -241,8 +241,8 @@ In this case , error message in the log file will be "java.security.InvalidAlgor
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/centos7-yong-nmtuixiu-gai-iphou-li-ji-sheng-xiao-de-ban-fa.html"/>
-        <id>https://powerrc.github.io/blog/centos7-yong-nmtuixiu-gai-iphou-li-ji-sheng-xiao-de-ban-fa.html</id>
+        <link href="https://powerrc.net/centos7-yong-nmtuixiu-gai-iphou-li-ji-sheng-xiao-de-ban-fa.html"/>
+        <id>https://powerrc.net/centos7-yong-nmtuixiu-gai-iphou-li-ji-sheng-xiao-de-ban-fa.html</id>
 
         <updated>2016-09-06T18:48:57-07:00</updated>
             <summary type="html">
@@ -269,8 +269,8 @@ In this case , error message in the log file will be "java.security.InvalidAlgor
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html"/>
-        <id>https://powerrc.github.io/blog/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html</id>
+        <link href="https://powerrc.net/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html"/>
+        <id>https://powerrc.net/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html</id>
 
         <updated>2016-09-02T13:06:43-07:00</updated>
             <summary type="html">
@@ -318,8 +318,8 @@ access_log /var/log/nginx/scripts.log scripts;
         <author>
             <name>PowerRC</name>
         </author>
-        <link href="https://powerrc.github.io/blog/install-saio-swift-all-in-one-in-centos-7x.html"/>
-        <id>https://powerrc.github.io/blog/install-saio-swift-all-in-one-in-centos-7x.html</id>
+        <link href="https://powerrc.net/install-saio-swift-all-in-one-in-centos-7x.html"/>
+        <id>https://powerrc.net/install-saio-swift-all-in-one-in-centos-7x.html</id>
 
         <updated>2016-07-29T12:42:43-07:00</updated>
             <summary type="html">
