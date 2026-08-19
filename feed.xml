@@ -20,7 +20,7 @@
         <updated>2018-04-27T16:34:05-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    Here is the script I used under centos 7 yum install -y autoconf automake bzip2 cmake gcc gcc-c++ libtool make&hellip;
+                    Here is the script I used under centos 7 yum install -y autoconf automake bzip2 cmake gcc gcc-c++ libtool make pkgconfig zlib-devel yasm wget https://github.com/01org/isa-l/archive/v2.22.0.tar.gz&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -54,7 +54,7 @@ ldconfig
         <updated>2017-04-13T11:55:50-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    1.replace the bad hd 2.sync partition table from the last available drive in the raid #sfdisk -d /dev/sda | sed&hellip;
+                    1.replace the bad hd 2.sync partition table from the last available drive in the raid #sfdisk -d /dev/sda | sed 's/sda/sdb/g' | sfdisk /dev/sdb 3.add&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -81,7 +81,7 @@ ldconfig
         <updated>2016-09-27T10:43:28-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    1、网络环境与设备 网络环境是comcast的100mbps/6mbps (down/up) cable network 1）有线设备6个（1个安防NVR,4个wired network security camera，1个电视盒子） 2）无线设备 约10个（2部手机，2部平板，1台laptop ，1台desktop，3个wireless security camera,一个wireless smart doorbell , 一个wireless smart thermostat&hellip;
+                    1、网络环境与设备 网络环境是comcast的100mbps/6mbps (down/up) cable network 1）有线设备6个（1个安防NVR,4个wired network security camera，1个电视盒子） 2）无线设备 约10个（2部手机，2部平板，1台laptop ，1台desktop，3个wireless security camera,一个wireless smart doorbell , 一个wireless smart thermostat ） 2、需求 1）要有流控，家里的所有网络设备加起来有10多个，有时候某个设备突然爆流量会拖垮网络，比如NVR上传视频流到云存储服务器的时候，如果不加以流控会影响使用。然后我也有下载机，这是后话。 2）有简单网络文件分享功能，主要是下载了电影电视剧，能直接在电视盒子/平板上点播 3）有下载机，不用开电脑就能下载，可以在公司远程推送下载任务&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -106,7 +106,7 @@ ldconfig
        1）无风扇工控机做vm hypervisor。最好要无扇的，因为这机子是要长期开的，功耗越低越好，一般只有功耗低的机子才能做到无扇，工控机可胜任此职。硬件要求是内存和CPU要尽可能的好，要双网口。另外要能接sata硬盘。可以用二奶机来做。我在国内淘宝弄了台c1037u双网口的山寨牌子工控机，加了64g msata ssd和4g内存 和500gb硬盘（硬盘是笔记本升级ssd时淘汰下来的）。用了2年，还行，偶尔会开不了机，长期开着的时候很稳定。现在的工控机选择更多，注意最好能买支持虚拟直通(vt-d)的机子，这样跑虚拟机的时候可以直接用很多外设，我的c1037u不支持直通，结果工控机本身自带的无线网卡是没法用了。
        2）一台无线路由器做无线ap或者switch+专业无线AP。这里我用的是路由器。有时候软路由挂了还能把路由器拿来backup。网络设备多的记得一定要用5ghz wifi网络，否则串扰很严重。100mb的internet带宽需要802.11ac的路由器/ap才能跑满。经过我的测试发现，家用无线路由器如果不开启NAT功能，只做简单的AP，异常稳定，可以半年不用重启一次。</p>
 <p>5、Network diagram
-<a href="https://www.powerrc.net/wp-content/uploads/2016/09/net_diagram.jpg"><figure class="aligncenter size-medium wp-image-434"><img loading="lazy" src="https://powerrc.net/media/posts/75/net_diagram-300x209.jpg" alt="net_diagram"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-xs.jpg 384w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-sm.jpg 600w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-md.jpg 768w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-lg.jpg 1200w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-xl.jpg 1600w"></figure></a></p>
+<a href="https://www.powerrc.net/wp-content/uploads/2016/09/net_diagram.jpg"><figure class="aligncenter size-medium wp-image-434"><img loading="lazy" src="https://powerrc.net/media/posts/75/net_diagram-300x209.jpg" alt="net_diagram"    sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-xs.jpg 300w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-sm.jpg 480w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-md.jpg 768w ,https://powerrc.net/media/posts/75/responsive/net_diagram-300x209-lg.jpg 1024w"></figure></a></p>
 
             ]]>
         </content>
@@ -169,7 +169,7 @@ ldconfig
 由于某种原因，2.0开始后他们就不开放这个后台功能。</p>
 <p>今天刮了一下代码，发现这个编号功能，是由一个名字叫"SalesSequence"的模组控制。
 这个模组在数据库里的表名是"sales_sequence_profile"
-<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.net/media/posts/73/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-xs.jpg 384w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-sm.jpg 600w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-lg.jpg 1200w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-xl.jpg 1600w"></figure></a>
+<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.net/media/posts/73/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-xs.jpg 300w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-sm.jpg 480w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.net/media/posts/73/responsive/magento2_increment_profile_table-300x140-lg.jpg 1024w"></figure></a>
 用phpmyadmin打开他，你就能知道你想要修改的东西了。</p>
 
 
@@ -187,7 +187,7 @@ ldconfig
         <updated>2016-09-15T18:29:52-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    This is actually a standard feature since magento v1.x But for some reason , magento team didn't open it for&hellip;
+                    This is actually a standard feature since magento v1.x But for some reason , magento team didn't open it for community version in v2.x After&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -196,7 +196,7 @@ ldconfig
 But for some reason , magento team didn't open it for community version in v2.x</p>
 <p>After digging into the codes , I found out it's actually controlled by a module named "SalesSequence".
 All setting are stored in a database table named "sales_sequence_profile"
-<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.net/media/posts/72/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-xs.jpg 384w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-sm.jpg 600w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-lg.jpg 1200w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-xl.jpg 1600w"></figure></a></p>
+<a href="https://www.powerrc.net/wp-content/uploads/2016/09/magento2_increment_profile_table.jpg"><figure class="aligncenter size-medium wp-image-410"><img loading="lazy" src="https://powerrc.net/media/posts/72/magento2_increment_profile_table-300x140.jpg" alt="magento2_increment_profile_table"    sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-xs.jpg 300w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-sm.jpg 480w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-md.jpg 768w ,https://powerrc.net/media/posts/72/responsive/magento2_increment_profile_table-300x140-lg.jpg 1024w"></figure></a></p>
 <p>Table field "prefix" is what you want to change.</p>
 
 
@@ -214,7 +214,7 @@ All setting are stored in a database table named "sales_sequence_profile"
         <updated>2016-09-13T00:25:59-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    Usually it's due to SSL compatitable issue. Check the log fil of netbeans first according to this FAQ =>http://wiki.netbeans.org/FaqLogMessagesFile And&hellip;
+                    Usually it's due to SSL compatitable issue. Check the log fil of netbeans first according to this FAQ =>http://wiki.netbeans.org/FaqLogMessagesFile And then following by these three&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -275,7 +275,7 @@ In this case , error message in the log file will be "java.security.InvalidAlgor
         <updated>2016-09-02T13:06:43-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    其实类似的解决方法的文章，网上有很多，但是我觉得总结得不够全面，所以这里单独总结一下。 总而言之，引起这种错误，是由于nginx无法获取到php运行脚本文件。 原因有以下可能： 1、权限不对。比如nginx的运行用户是www，但是文件的拥有用户是root然后不可执行。 2、nginx配置错误。php分段下，默认的配置是 fastcgi_param SCRIPT_FILENAME /scripts/$fastcgi_script_name; 需要改成 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; 至此，应该99%的人都已经解决这个问题，但是如果你还是没搞掂，请看第三种可能 3、nginx的运行配置里没有设置$document_root。这个是需要在sever分段下设置。 set $root_path '/opt/php/doc'; root $root_path; 另外，提供一个调试类似错误的方法。&hellip;
+                    其实类似的解决方法的文章，网上有很多，但是我觉得总结得不够全面，所以这里单独总结一下。 总而言之，引起这种错误，是由于nginx无法获取到php运行脚本文件。 原因有以下可能： 1、权限不对。比如nginx的运行用户是www，但是文件的拥有用户是root然后不可执行。 2、nginx配置错误。php分段下，默认的配置是 fastcgi_param SCRIPT_FILENAME /scripts/$fastcgi_script_name; 需要改成 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; 至此，应该99%的人都已经解决这个问题，但是如果你还是没搞掂，请看第三种可能 3、nginx的运行配置里没有设置$document_root。这个是需要在sever分段下设置。 set $root_path '/opt/php/doc'; root $root_path; 另外，提供一个调试类似错误的方法。 在nginx配置的http分段下加入这行 log_format scripts '$document_root$fastcgi_script_name >&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -324,7 +324,7 @@ access_log /var/log/nginx/scripts.log scripts;
         <updated>2016-07-29T12:42:43-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    So far as 7/29/2016 for swift version 2.9.1.dev51 According to the official guide here http://docs.openstack.org/developer/swift/development_saio.html , there will be some&hellip;
+                    So far as 7/29/2016 for swift version 2.9.1.dev51 According to the official guide here http://docs.openstack.org/developer/swift/development_saio.html , there will be some mismatch packages fail you on&hellip;
                 ]]>
             </summary>
         <content type="html">
