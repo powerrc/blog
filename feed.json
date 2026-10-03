@@ -10,6 +10,36 @@
     },
     "items": [
         {
+            "id": "https://powerrc.net/i-built-a-http-file-sharing-app-with-rust.html",
+            "url": "https://powerrc.net/i-built-a-http-file-sharing-app-with-rust.html",
+            "title": "I built a http file sharing app with rust",
+            "summary": "Using it to move file from my phone to the computer, my old way is using ftp server/client method,,, now it's much improved, give it&hellip;",
+            "content_html": "<p>Using it to move file from my phone to the computer, my old way is using ftp server/client method,,, now it's much improved, give it a try<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://powerrc.net/media/posts/82/1.jpg\" alt=\"\" width=\"3500\" height=\"1800\" sizes=\"(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)\" srcset=\"https://powerrc.net/media/posts/82/responsive/1-xs.jpg 300w ,https://powerrc.net/media/posts/82/responsive/1-sm.jpg 480w ,https://powerrc.net/media/posts/82/responsive/1-md.jpg 768w ,https://powerrc.net/media/posts/82/responsive/1-lg.jpg 1024w\"></figure>\n<p>For more detail go to the website=&gt;<a href=\"https://ehshare.powerrc.net\">https://ehshare.powerrc.net</a></p>\n<p>To download=&gt;<a href=\"https://github.com/powerrc/ehshare/releases\">https://github.com/powerrc/ehshare/releases</a></p>",
+            "author": {
+                "name": "PowerRC"
+            },
+            "tags": [
+                   "Work"
+            ],
+            "date_published": "2026-10-02T18:50:05-07:00",
+            "date_modified": "2026-10-02T18:50:49-07:00"
+        },
+        {
+            "id": "https://powerrc.net/yong-rustzuo-liao-yi-ge-http-file-sharing-app.html",
+            "url": "https://powerrc.net/yong-rustzuo-liao-yi-ge-http-file-sharing-app.html",
+            "title": "用Rust做了一个http file sharing app",
+            "summary": "平时用来从手机上搬大文件到电脑上，挺方便的，比如比赛录像什么的。 详细介绍请看=&gt;https://ehshare.powerrc.net 下载来这里=&gt;https://github.com/powerrc/ehshare/releases",
+            "content_html": "<p>平时用来从手机上搬大文件到电脑上，挺方便的，比如比赛录像什么的。</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://powerrc.net/media/posts/81/1.jpg\" alt=\"\" width=\"3500\" height=\"1800\" sizes=\"(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)\" srcset=\"https://powerrc.net/media/posts/81/responsive/1-xs.jpg 300w ,https://powerrc.net/media/posts/81/responsive/1-sm.jpg 480w ,https://powerrc.net/media/posts/81/responsive/1-md.jpg 768w ,https://powerrc.net/media/posts/81/responsive/1-lg.jpg 1024w\"></figure>\n<p>详细介绍请看=&gt;<a href=\"https://ehshare.powerrc.net\">https://ehshare.powerrc.net</a></p>\n<p>下载来这里=&gt;<a href=\"https://github.com/powerrc/ehshare/releases\">https://github.com/powerrc/ehshare/releases</a></p>",
+            "author": {
+                "name": "PowerRC"
+            },
+            "tags": [
+                   "小打小闹"
+            ],
+            "date_published": "2026-10-02T18:23:36-07:00",
+            "date_modified": "2026-10-02T18:51:05-07:00"
+        },
+        {
             "id": "https://powerrc.net/how-to-enable-isa-l-for-openstack-swift.html",
             "url": "https://powerrc.net/how-to-enable-isa-l-for-openstack-swift.html",
             "title": "How to enable ISA-L for openstack swift",
@@ -119,34 +149,6 @@
             "tags": [
             ],
             "date_published": "2016-09-06T18:48:57-07:00",
-            "date_modified": "2026-08-18T09:51:48-07:00"
-        },
-        {
-            "id": "https://powerrc.net/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html",
-            "url": "https://powerrc.net/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html",
-            "title": "nginx运行php报错Primary script unknown的解决办法",
-            "summary": "其实类似的解决方法的文章，网上有很多，但是我觉得总结得不够全面，所以这里单独总结一下。 总而言之，引起这种错误，是由于nginx无法获取到php运行脚本文件。 原因有以下可能： 1、权限不对。比如nginx的运行用户是www，但是文件的拥有用户是root然后不可执行。 2、nginx配置错误。php分段下，默认的配置是 fastcgi_param SCRIPT_FILENAME /scripts/$fastcgi_script_name; 需要改成 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; 至此，应该99%的人都已经解决这个问题，但是如果你还是没搞掂，请看第三种可能 3、nginx的运行配置里没有设置$document_root。这个是需要在sever分段下设置。 set $root_path '/opt/php/doc'; root $root_path; 另外，提供一个调试类似错误的方法。 在nginx配置的http分段下加入这行 log_format scripts '$document_root$fastcgi_script_name >&hellip;",
-            "content_html": "<p>其实类似的解决方法的文章，网上有很多，但是我觉得总结得不够全面，所以这里单独总结一下。\n总而言之，引起这种错误，是由于nginx无法获取到php运行脚本文件。</p>\n<p>原因有以下可能：</p>\n<p>1、权限不对。比如nginx的运行用户是www，但是文件的拥有用户是root然后不可执行。</p>\n<p>2、nginx配置错误。php分段下，默认的配置是\n<code>\nfastcgi_param  SCRIPT_FILENAME  /scripts/$fastcgi_script_name;\n</code>\n需要改成\n<code>\nfastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;\n</code></p>\n<p>至此，应该99%的人都已经解决这个问题，但是如果你还是没搞掂，请看第三种可能\n3、nginx的运行配置里没有设置$document_root。这个是需要在sever分段下设置。\n<code>\nset $root_path '/opt/php/doc';\nroot $root_path;\n</code></p>\n<p>\n另外，提供一个调试类似错误的方法。\n在nginx配置的http分段下加入这行\n<code>\nlog_format scripts '$document_root$fastcgi_script_name > $request';\n</code>\n然后在server分段下加入\n<code>\naccess_log /var/log/nginx/scripts.log scripts;\n</code>\n这样，所有运行的脚本信息都会被记录在/var/log/nginx/scripts.log 这个文件下，打开看看有没有什么不对劲，就知道你出错在哪儿了。</p>\n",
-            "author": {
-                "name": "PowerRC"
-            },
-            "tags": [
-            ],
-            "date_published": "2016-09-02T13:06:43-07:00",
-            "date_modified": "2026-08-18T09:51:48-07:00"
-        },
-        {
-            "id": "https://powerrc.net/install-saio-swift-all-in-one-in-centos-7x.html",
-            "url": "https://powerrc.net/install-saio-swift-all-in-one-in-centos-7x.html",
-            "title": "install saio (swift all in one) in centos 7.x",
-            "summary": "So far as 7/29/2016 for swift version 2.9.1.dev51 According to the official guide here http://docs.openstack.org/developer/swift/development_saio.html , there will be some mismatch packages fail you on&hellip;",
-            "content_html": "<p>So far as 7/29/2016 for swift version 2.9.1.dev51\nAccording to the official guide here http://docs.openstack.org/developer/swift/development_saio.html , there will be some mismatch packages fail you on installation.</p>\n<p>Which means , there are some preparation work you have to do before you follow the official guide,here are steps that I overcome problems:</p>\n<p>1.Install epel-relase and centos-mitaka package, this is almost a must for using higher version python \n<code>#yum install epel-release centos-release-openstack-mitaka -y</code></p>\n<p>2.Update package\n<code>#yum update -y</code></p>\n<p>The key is , you have to install RDO-openstack package , it will basically help you to install all required packages that openstack swift needs , and yes , correct version</p>\n<p>Now you should be able to follow the guide without problem</p>\n",
-            "author": {
-                "name": "PowerRC"
-            },
-            "tags": [
-            ],
-            "date_published": "2016-07-29T12:42:43-07:00",
             "date_modified": "2026-08-18T09:51:48-07:00"
         }
     ]

@@ -3,12 +3,59 @@
     <title>PowerRC blog</title>
     <link href="https://powerrc.net/feed.xml" rel="self" />
     <link href="https://powerrc.net" />
-    <updated>2026-08-18T09:51:48-07:00</updated>
+    <updated>2026-10-02T18:51:05-07:00</updated>
     <author>
         <name>PowerRC</name>
     </author>
     <id>https://powerrc.net</id>
 
+    <entry>
+        <title>I built a http file sharing app with rust</title>
+        <author>
+            <name>PowerRC</name>
+        </author>
+        <link href="https://powerrc.net/i-built-a-http-file-sharing-app-with-rust.html"/>
+        <id>https://powerrc.net/i-built-a-http-file-sharing-app-with-rust.html</id>
+            <category term="Work"/>
+
+        <updated>2026-10-02T18:50:05-07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Using it to move file from my phone to the computer, my old way is using ftp server/client method,,, now it's much improved, give it&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Using it to move file from my phone to the computer, my old way is using ftp server/client method,,, now it's much improved, give it a try<figure class="post__image"><img loading="lazy"  src="https://powerrc.net/media/posts/82/1.jpg" alt="" width="3500" height="1800" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://powerrc.net/media/posts/82/responsive/1-xs.jpg 300w ,https://powerrc.net/media/posts/82/responsive/1-sm.jpg 480w ,https://powerrc.net/media/posts/82/responsive/1-md.jpg 768w ,https://powerrc.net/media/posts/82/responsive/1-lg.jpg 1024w"></figure>
+<p>For more detail go to the website=&gt;<a href="https://ehshare.powerrc.net">https://ehshare.powerrc.net</a></p>
+<p>To download=&gt;<a href="https://github.com/powerrc/ehshare/releases">https://github.com/powerrc/ehshare/releases</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>用Rust做了一个http file sharing app</title>
+        <author>
+            <name>PowerRC</name>
+        </author>
+        <link href="https://powerrc.net/yong-rustzuo-liao-yi-ge-http-file-sharing-app.html"/>
+        <id>https://powerrc.net/yong-rustzuo-liao-yi-ge-http-file-sharing-app.html</id>
+            <category term="小打小闹"/>
+
+        <updated>2026-10-02T18:23:36-07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    平时用来从手机上搬大文件到电脑上，挺方便的，比如比赛录像什么的。 详细介绍请看=&gt;https://ehshare.powerrc.net 下载来这里=&gt;https://github.com/powerrc/ehshare/releases
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>平时用来从手机上搬大文件到电脑上，挺方便的，比如比赛录像什么的。</p>
+<figure class="post__image"><img loading="lazy"  src="https://powerrc.net/media/posts/81/1.jpg" alt="" width="3500" height="1800" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://powerrc.net/media/posts/81/responsive/1-xs.jpg 300w ,https://powerrc.net/media/posts/81/responsive/1-sm.jpg 480w ,https://powerrc.net/media/posts/81/responsive/1-md.jpg 768w ,https://powerrc.net/media/posts/81/responsive/1-lg.jpg 1024w"></figure>
+<p>详细介绍请看=&gt;<a href="https://ehshare.powerrc.net">https://ehshare.powerrc.net</a></p>
+<p>下载来这里=&gt;<a href="https://github.com/powerrc/ehshare/releases">https://github.com/powerrc/ehshare/releases</a></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>How to enable ISA-L for openstack swift</title>
         <author>
@@ -260,84 +307,6 @@ In this case , error message in the log file will be "java.security.InvalidAlgor
 命令如下：
 <code>#nmcli con reload</code></p>
 <p>另外，如果你是通过这个链接登录服务器的，可能修改IP后你会发现SSH链接被断了（因为ip换了嘛），建议一切网络操作都通过终端或者KVM/IPMI去操作。</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>nginx运行php报错Primary script unknown的解决办法</title>
-        <author>
-            <name>PowerRC</name>
-        </author>
-        <link href="https://powerrc.net/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html"/>
-        <id>https://powerrc.net/nginxyun-xing-phpbao-cuo-primary-script-unknownde-jie-jue-ban-fa.html</id>
-
-        <updated>2016-09-02T13:06:43-07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    其实类似的解决方法的文章，网上有很多，但是我觉得总结得不够全面，所以这里单独总结一下。 总而言之，引起这种错误，是由于nginx无法获取到php运行脚本文件。 原因有以下可能： 1、权限不对。比如nginx的运行用户是www，但是文件的拥有用户是root然后不可执行。 2、nginx配置错误。php分段下，默认的配置是 fastcgi_param SCRIPT_FILENAME /scripts/$fastcgi_script_name; 需要改成 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; 至此，应该99%的人都已经解决这个问题，但是如果你还是没搞掂，请看第三种可能 3、nginx的运行配置里没有设置$document_root。这个是需要在sever分段下设置。 set $root_path '/opt/php/doc'; root $root_path; 另外，提供一个调试类似错误的方法。 在nginx配置的http分段下加入这行 log_format scripts '$document_root$fastcgi_script_name >&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>其实类似的解决方法的文章，网上有很多，但是我觉得总结得不够全面，所以这里单独总结一下。
-总而言之，引起这种错误，是由于nginx无法获取到php运行脚本文件。</p>
-<p>原因有以下可能：</p>
-<p>1、权限不对。比如nginx的运行用户是www，但是文件的拥有用户是root然后不可执行。</p>
-<p>2、nginx配置错误。php分段下，默认的配置是
-<code>
-fastcgi_param  SCRIPT_FILENAME  /scripts/$fastcgi_script_name;
-</code>
-需要改成
-<code>
-fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-</code></p>
-<p>至此，应该99%的人都已经解决这个问题，但是如果你还是没搞掂，请看第三种可能
-3、nginx的运行配置里没有设置$document_root。这个是需要在sever分段下设置。
-<code>
-set $root_path '/opt/php/doc';
-root $root_path;
-</code></p>
-<p>
-另外，提供一个调试类似错误的方法。
-在nginx配置的http分段下加入这行
-<code>
-log_format scripts '$document_root$fastcgi_script_name > $request';
-</code>
-然后在server分段下加入
-<code>
-access_log /var/log/nginx/scripts.log scripts;
-</code>
-这样，所有运行的脚本信息都会被记录在/var/log/nginx/scripts.log 这个文件下，打开看看有没有什么不对劲，就知道你出错在哪儿了。</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>install saio (swift all in one) in centos 7.x</title>
-        <author>
-            <name>PowerRC</name>
-        </author>
-        <link href="https://powerrc.net/install-saio-swift-all-in-one-in-centos-7x.html"/>
-        <id>https://powerrc.net/install-saio-swift-all-in-one-in-centos-7x.html</id>
-
-        <updated>2016-07-29T12:42:43-07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    So far as 7/29/2016 for swift version 2.9.1.dev51 According to the official guide here http://docs.openstack.org/developer/swift/development_saio.html , there will be some mismatch packages fail you on&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>So far as 7/29/2016 for swift version 2.9.1.dev51
-According to the official guide here http://docs.openstack.org/developer/swift/development_saio.html , there will be some mismatch packages fail you on installation.</p>
-<p>Which means , there are some preparation work you have to do before you follow the official guide,here are steps that I overcome problems:</p>
-<p>1.Install epel-relase and centos-mitaka package, this is almost a must for using higher version python 
-<code>#yum install epel-release centos-release-openstack-mitaka -y</code></p>
-<p>2.Update package
-<code>#yum update -y</code></p>
-<p>The key is , you have to install RDO-openstack package , it will basically help you to install all required packages that openstack swift needs , and yes , correct version</p>
-<p>Now you should be able to follow the guide without problem</p>
 
             ]]>
         </content>
